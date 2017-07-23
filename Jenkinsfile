@@ -16,5 +16,10 @@ echo "Hello This is stage2 step2"'''
         )
       }
     }
+    stage('stage3serial') {
+      steps {
+        sh 'echo "stage3 step1 parallel"'
+      }
+    }
   }
 }
